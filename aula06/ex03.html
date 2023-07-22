@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Segunda aula prática de JS |</title>
+    <style>
+        h2{
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tranformando string em number e vice-versa</h1>
+    <h2>Usando de template string (<strong>`${n}`</strong>)</h2>
+    <script>
+
+
+        //testado! se mudar pra float ele converte direto
+        //dá pra usar só Number(n)
+        var n1 = Number.parseFloat(window.prompt('Digite qualquer número'))
+        var n2 = Number.parseFloat(window.prompt('Digite outro número'))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é: ${s}`)
+
+        //convertendo string pra number 
+        /*
+        ( Number.parseInt(n) ) inteiro 5..
+        ( Number.parseFloat(n) ) real 5,1..
+        */
+
+
+        //number + number pra adição 
+        // + para adição e para concatenação
+        //prompt retorna string e nao number
+    </script>
+</body>
+</html>
