@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Aula 09 DOM |</title>
+    <style>
+        body{
+            background-color: rgb(6, 22, 112);
+            color: white;
+            font-size: 2rem;
+        }
+        div{
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 2px;
+            width: 300px;
+            text-align: center;
+            transition: 0.5s;
+        }
+        div:hover{
+            background-color: white;
+            color: rgb(6, 22, 112);;
+        }
+    </style>
+</head>
+<body>
+    <h1>Entendendo DOM</h1>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript ( Document Object Model )</p>
+    <p>Segundo Paragrafo pra entender o assunto</p>
+    <div id="msg">Clique Aqui</div>
+
+    <script>
+        
+        var par = window.document.getElementsByTagName('p')[0]//variavel que pega o primeiro 'p'
+        document.write(par.innerText)//escrevendo o texto dentro de 'p'  
+        //innerText pega só o texto, pra pegar as tags seria: innerHTML
+
+        var div =window.document.getElementById('msg')
+        div.style.background = 'green'
+    </script>
+
+</body>
+</html>
