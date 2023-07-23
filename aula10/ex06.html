@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Aula 10 JS |</title>
+    <style>
+        *{
+            font-family: Arial;
+        }
+        #area{
+            background-color: rgb(17, 17, 138);
+            color: white;
+            width: 400px;
+            height: 400px;
+            line-height: 400px;
+            text-align: center;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="area"><!--chamando a função-->
+        Área interativa..
+    </div>
+
+    <script>
+        //iniciando a função
+        var a = window.document.getElementById('area')
+
+        //deixando o HTML limpo
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        
+        function clicar(){  
+            a.innerText = 'Caixa clicada'
+            a.style.background = 'red'
+        }
+
+        function entrar(){
+            a.innerText = 'Mouse dentro da caixa'
+        }
+        function sair(){
+            a.innerText = 'Mouse fora da caixa'
+            a.style.background = 'rgb(17, 17, 138'
+        }
+    </script>
+</body>
+</html>
