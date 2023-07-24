@@ -5,3 +5,4 @@ if (pais != 'Brasil'){
 }else{
     console.log('Você é Brasileiro')
 }
+//condição Simples
