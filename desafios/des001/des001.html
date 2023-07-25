@@ -4,23 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>| Desafio 001 |</title>
-    <style>
-
-        input{
-            padding: 30px;         
-        }
-
-    </style>
-
 </head>
 <body>
     <h1>Desafio das Mensagens</h1>
-    <input type="button" value="botao1" id="botao1" onclick="click()">
-
+    <button id="btn1">clique</button>
 
     <script>
-      
-    </script>
+        var btn = document.querySelector('#btn1')
 
+        btn.addEventListener("click", click)
+
+        function click(){
+            window.alert ("alou")
+                }
+
+    </script>
 </body>
 </html>
