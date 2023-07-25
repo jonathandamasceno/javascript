@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>| Desafio 001 |</title>
+    <style>
+        button{
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1>Desafio das Mensagens</h1>
-    <button id="btn1">clique</button>
+    <button value="botao 1" id="button1" onclick="botao(value)">clique botao 1</button>
+    <button value="botao 2" id="button2" onclick="botao(value)">clique botao 2</button>
+    <button value="botao 3" id="button3" onclick="botao(value)">clique botao 3</button>
 
     <script>
-        var btn = document.querySelector('#btn1')
-
-        btn.addEventListener("click", click)
-
-        function click(){
-            window.alert ("alou")
-                }
+        function botao(botao){
+            alert(botao);
+        }
 
     </script>
 </body>
