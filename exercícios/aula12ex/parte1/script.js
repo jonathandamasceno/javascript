@@ -13,7 +13,7 @@ function carregar(){
         img.src = 'manha.png'
         document.body.style.background = '#FFADA0'
     }else if(hora >= 12 && hora <= 18){
-        img.src = 'tarde.png'
+        img.src = 'tarde.png'//horários
         document.body.style.background = '#F6C18B'
     }else{
         img.src = 'noite.png'
