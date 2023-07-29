@@ -22,3 +22,9 @@ footer{
     color: white;
     font-style: italic;
 }
+h2{
+    text-align: center;
+}
+#main > p{
+    text-align: justify;
+}
